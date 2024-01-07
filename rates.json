@@ -1,0 +1,40 @@
+[{
+	"_id" : "646745dddcd0451619cccf09",
+	"updatedAt" : "2023-05-19T09:48:15.315Z",
+	"createdAt" : "2023-05-19T09:48:13.739Z",
+	"rules": {
+		"AND" : [
+			{ "type_of_load" : ["IMPORT", "EXPORT"] },
+			{ "caller" : "60a66806d7e0507b66ee880e" },
+			{ "containerSize" : "5bbb6344e24ec65cd0a9d8e2" },
+			{ "overWeight" : false }
+		]
+	},
+	"amountWithRange": [
+		{ "start": 1, "end": 50, "amount": 379, "type": "fixed" },
+		{ "start": 50, "end": 100, "amount": 423, "type": "fixed" },
+		{ "start": 100, "end": 200, "amount": 596, "type": "fixed" },
+		{ "start": 200, "end": 400, "amount": 799, "type": "fixed" },
+		{ "start": 400, "end": 9999999, "amount": 1000, "type": "fixed" }
+	]
+},
+{
+	"_id" : "646745dddcd0451619cccf09",
+	"updatedAt" : "2023-05-19T09:48:15.315Z",
+	"createdAt" : "2023-05-19T09:48:13.739Z",
+	"rules": {
+		"OR" : [
+			{ "type_of_load" : ["IMPORT", "EXPORT"] },
+			{ "caller" : "608c6b11cc3900185146673a" },
+			{ "containerOwner" : "5bbb631ee24ec65cd0a9d8e0" },
+			{ "overWeight" : true }
+		]
+	},
+	"amountWithRange": [
+		{ "start": 1, "end": 50, "amount": 336, "type": "fixed" },
+		{ "start": 50, "end": 100, "amount": 475, "type": "fixed" },
+		{ "start": 100, "end": 200, "amount": 588, "type": "fixed" },
+		{ "start": 200, "end": 400, "amount": 741, "type": "fixed" },
+		{ "start": 400, "end": 9999999, "amount": 2, "type": "perunit" }
+	]
+}]
